@@ -23,9 +23,6 @@ def get_the_post(post, title):
         text = title + "\n—————\n\n" + post['text']
     else:
         text = post['text']
-    text = text.replace("club", "vk.com/club")
-    text = text.replace("id", 'vk.com/id')
-    text = text.replace("|", " |")
 
     if 'attachments' in post:
         attachments = post['attachments']
